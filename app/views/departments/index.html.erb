@@ -23,22 +23,22 @@
         </th>
       </tr>
 
-      <% @list_of_department.each do |department| %>
-      <tr>
-        <td>
-          <%= department.id %>
-        </td>
+      <% @list_of_departments.each do |department| %>
+        <tr>
+          <td>
+            <%= department.id %>
+          </td>
 
-        <td>
-          <%= department.name %>
-        </td>
+          <td>
+            <%= department.name %>
+          </td>
 
-        <td>
-          <a href="/departments/<%= department.id %>">
-            Show details
-          </a>
-        </td>
-      </tr>
+          <td>
+            <a href="/departments/<%= department.id %>">
+              Show details
+            </a>
+          </td>
+        </tr>
       <% end %>
     </table>
   </div>
